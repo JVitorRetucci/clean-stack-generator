@@ -8,6 +8,6 @@ export class ValidationError extends Error {
     public readonly errors: IValidationError[],
     public readonly data?: Record<string, unknown>
   ) {
-    super("Error on validation");
+    super("Something went wrong. Please, try again later.");
   }
 }
